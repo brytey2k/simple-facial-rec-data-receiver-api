@@ -1,0 +1,80 @@
+{
+	"info": {
+		"_postman_id": "5fa8cb53-268c-4cb0-b874-25d24923e843",
+		"name": "Facial Recognition Web API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1886615"
+	},
+	"item": [
+		{
+			"name": "Save member face data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n  {\n    \"id\": 1,\n    \"name\": \"John Doe\",\n    \"face\": \"image1.jpg\",\n    \"face_feature\": \"long string of face features\"\n  },\n  {\n    \"id\": 2,\n    \"name\": \"Jane Doe\",\n    \"face\": \"image2.jpg\",\n    \"face_feature\": \"long string of face features\"\n  },\n  {\n    \"id\": 3,\n    \"name\": \"Bob Smith\",\n    \"face\": \"image3.jpg\",\n    \"face_feature\": \"long string of face features\"\n  }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/members",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"members"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get members face data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/members",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"members"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:3000",
+			"type": "string"
+		}
+	]
+}
