@@ -6,6 +6,11 @@ const router = express.Router();
 router.use(bodyParser.json());
 
 router.post('/members', async (req, res) => {
+    if(req.body.length < 1) {
+        res.status(500).json({message: 'No facial data contained in request'});
+        return;
+    }
+
     try {
         const members = req.body;
         const createdMembers = await Member.bulkCreate(members);
