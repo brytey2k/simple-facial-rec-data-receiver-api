@@ -1,4 +1,4 @@
-# Simple Facial Data Receiver App
+# Simple Facial Data Receiver API
 
 ### About the project
 Simple API to receive facial recognition data captured on mobile devices. This data will be used to restore facial data to other devices
