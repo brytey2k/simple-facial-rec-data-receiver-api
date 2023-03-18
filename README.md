@@ -11,7 +11,8 @@ Simple API to receive facial recognition data captured on mobile devices. This d
 
 ### Usage
 A Postman collection has been added to this project to test the endpoints: [FacialRecognitionWebAPI.postman_collection.json](FacialRecognitionWebAPI.postman_collection.json).
-To start the application, run `npm start`
+- First create a .env file from the [.env-example](.env-example) file and type in the correct configuration. 
+- To start the application, run `npm start`
 
 ### Tests
 To run tests, run `npm test`
